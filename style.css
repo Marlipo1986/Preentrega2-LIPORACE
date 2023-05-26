@@ -1,0 +1,104 @@
+  /* INICIO FORMATO PARA TODAS LAS PAGINAS */
+  
+  @font-face {
+    font-family: FE-Font;
+    src: url(./Respaldo/Fonts/FE-FONT.TTF);
+   }
+  @font-face {
+    font-family: Rasic-Life;
+    src: url(./Respaldo/Fonts/rasic_life/Rasic-Life.ttf);
+  }
+  @font-face {
+    font-family: Bruno-ace;
+    src: url(./Respaldo/Fonts/BrunoAceSC-Regular.ttf);
+  }
+  @font-face {
+    font-family: Dosis;
+    src: url(./Respaldo/Fonts/Dosis/Dosis-VariableFont_wght.ttf);
+  }
+
+  /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bruno-ace';
+} */
+
+.header{
+  font-family: 'Bruno-ace';
+}
+
+.footer{
+  font-family: 'Dosis';
+}
+
+.main{
+    background-image: url(./Respaldo/Media/night.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-family:'Rasic-Life';
+}
+
+.nav-enlace:link{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav-enlace:hover{
+    color: darkcyan;
+    text-decoration: none;
+    background-color: blue;
+    border: double palegreen 4px;
+    padding: 2px;
+}
+/* FIN FORMATO PARA TODAS LAS PAGINAS */
+/* Formato SERVICES */
+
+strong{text-decoration: underline;}
+main{margin: 50p;
+}
+.tech_logos{
+ height: 80px;
+ width: 80px;
+}
+
+.grilla-services{
+ display: grid;
+ grid-template-areas:
+ "encabezado encabezado"
+ "svcs-ing svcs-esp"
+ "svcs-txt-ing svcs-txt-esp"
+ "techs techs";
+ grid-template-columns: 50% 50%;
+ /* border: 3px;
+ border-style: double;
+ border-color: blue; */
+ /* margin: 35px; */
+ /* padding: 15px; */
+ gap: 15px;
+ }
+
+ /* Inicio Areas para el grid template Services */
+ .nombre-h1{grid-area: encabezado;}
+ .services-ingles{grid-area: svcs-ing;}
+ .services-texto-ingles{grid-area: svcs-txt-ing;}
+ .services-esp{grid-area: svcs-esp;}
+ .services-texto-esp{grid-area: svcs-txt-esp;}
+ .skills_logos{grid-area: techs;}
+ /* Fin Areas para grid Services */
+
+.skills_logos{
+  display: flex;
+  justify-content: space-around;
+  }
+
+  .tech_logos{
+    height: 80px;
+    width: 80px;
+  }
+
+  .sigamos{
+    font-family: 'Dosis';
+  }
