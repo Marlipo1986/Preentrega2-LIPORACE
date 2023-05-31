@@ -54,6 +54,7 @@
     padding: 2px;
 }
 /* FIN FORMATO PARA TODAS LAS PAGINAS */
+
 /* Formato SERVICES */
 
 strong{text-decoration: underline;}
@@ -92,13 +93,24 @@ main{margin: 50p;
 .skills_logos{
   display: flex;
   justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
   }
 
   .tech_logos{
+    display: flex;
+    justify-content: center;
     height: 80px;
     width: 80px;
   }
 
   .sigamos{
     font-family: 'Dosis';
+  }
+
+  @media screen and (max-width: 598px) {
+    .embed-responsive-item{
+      width: 168px;
+      height: 94px;
+    }
   }
